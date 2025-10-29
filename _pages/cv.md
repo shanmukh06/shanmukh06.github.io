@@ -11,13 +11,11 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.Tech. in Computer Science and Engineering, University of Petroleum and Energy Studies, 2028(Ongoing)
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
+* Summer 2025: Summer Intern
   * GitHub University
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users

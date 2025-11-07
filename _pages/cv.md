@@ -13,7 +13,7 @@ Education
 ======
 * B.Tech. in Computer Science and Engineering, University of Petroleum and Energy Studies, 2028(Ongoing)
 
-Work experience
+<!-- Work experience
 ======
 * Summer 2025: Summer Intern
   * GitHub University
@@ -28,7 +28,7 @@ Work experience
 * Summer 2015: Research Assistant
   * GitHub University
   * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Supervisor: Professor Git -->
   
 Skills
 ======

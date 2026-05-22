@@ -33,7 +33,9 @@ Education
 Skills
 ======
 * Programming Languages: Python, C
-* ML Libraries: Tensorflow
+* ML Libraries: Pytorch
+
+
 <!-- * Python
 * C
   * Sub-skill 2.1

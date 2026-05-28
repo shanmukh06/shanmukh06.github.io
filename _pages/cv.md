@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,47 +9,74 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="resume-section">
+
+<div class="section-title">
 Education
-======
-* B.Tech. in Computer Science and Engineering, University of Petroleum and Energy Studies, 2028(Ongoing)
+</div>
 
-Work experience
-======
-* Research Intern
-  * National Institute of Technology Karnataka, Surathkal
-  * Duties includes: Working on Speaker Profiling
-  
+<div class="section-content">
+
+<h3>B.Tech. in Computer Science and Engineering</h3>
+
+<h4>University of Petroleum and Energy Studies</h4>
+
+<span class="meta">
+2028 (Ongoing)
+</span>
+
+</div>
+
+</div>
+
+<div class="resume-section">
+
+<div class="section-title">
+Experience
+</div>
+
+<div class="section-content">
+
+<h3>Research Intern</h3>
+
+<h4>National Institute of Technology Karnataka, Surathkal</h4>
+
+<span class="meta">
+June 2026 – Present · Surathkal, Karnataka, India
+</span>
+
+<p>
+<strong>Speaker Profiling</strong>
+</p>
+
+<ul>
+<li>
+Worked on Speaker Profiling systems and related research tasks.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="resume-section">
+
+<div class="section-title">
 Skills
-======
-* Programming Languages: Python, C
-* ML Libraries: Pytorch
+</div>
 
+<div class="section-content">
 
-<!-- * Python
-* C
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3 -->
-<!-- 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+<ul>
+<li>
+<strong>Programming Languages:</strong> Python, C
+</li>
+
+<li>
+<strong>ML Libraries:</strong> PyTorch
+</li>
+</ul>
+
+</div>
+
+</div>

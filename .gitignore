@@ -18,3 +18,17 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Ignore generated include HTML files (build artifacts)
+_includes/archive-single-talk-cv.html
+_includes/archive-single-talk.html
+_includes/archive-single.html
+_includes/breadcrumbs.html
+_includes/footer.html
+_includes/head.html
+_includes/masthead.html
+_includes/post_pagination.html
+_includes/scripts.html
+_includes/tag-list.html
+# head subfolder custom include
+_includes/head/custom.html

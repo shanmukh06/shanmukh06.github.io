@@ -13,22 +13,11 @@ Education
 ======
 * B.Tech. in Computer Science and Engineering, University of Petroleum and Energy Studies, 2028(Ongoing)
 
-<!-- Work experience
+Work experience
 ======
-* Summer 2025: Summer Intern
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git -->
+* Research Intern
+  * National Institute of Technology Karnataka, Surathkal
+  * Duties includes: Working on Speaker Profiling
   
 Skills
 ======

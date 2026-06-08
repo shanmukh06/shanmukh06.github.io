@@ -32,3 +32,5 @@ _includes/scripts.html
 _includes/tag-list.html
 # head subfolder custom include
 _includes/head/custom.html
+
+_config_dev.yml

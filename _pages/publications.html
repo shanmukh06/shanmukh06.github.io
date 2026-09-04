@@ -1,36 +1,61 @@
 ---
 layout: archive
-title: "Publications"
+title: "All Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<p class="publications__intro">
+  A selection of my research publications and manuscripts.
+</p>
+
+{% assign publications_by_year = site.publications | sort: "date" | reverse | group_by_exp: "publication", "publication.date | date: '%Y'" %}
+
+<div class="publications">
+  {% for year in publications_by_year %}
+    <section class="publications__year" aria-labelledby="year-{{ year.name }}">
+      <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
+
+      {% for post in year.items %}
+        <article class="publication-card">
+          {% if post.header.teaser %}
+            <a class="publication-card__image" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">
+              <img src="{{ post.header.teaser | prepend: '/images/' | relative_url }}" alt="">
+            </a>
+          {% endif %}
+
+          <div class="publication-card__body">
+            <h3 class="publication-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+
+            {% if post.authors %}
+              <p class="publication-card__authors">{{ post.authors }}</p>
+            {% endif %}
+
+            {% if post.venue %}
+              <p class="publication-card__venue">{{ post.venue }}</p>
+            {% endif %}
+
+            {% if post.excerpt %}
+              <p class="publication-card__summary">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% endif %}
+
+            {% if post.paperurl or post.codeurl or post.projecturl or post.bibtexurl %}
+              <p class="publication-card__links">
+                {% if post.paperurl %}<a href="{{ post.paperurl }}"><i class="fa fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
+                {% if post.codeurl %}<a href="{{ post.codeurl }}"><i class="fa fa-code" aria-hidden="true"></i> Code</a>{% endif %}
+                {% if post.projecturl %}<a href="{{ post.projecturl }}"><i class="fa fa-link" aria-hidden="true"></i> Project</a>{% endif %}
+                {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}"><i class="fa fa-quote-right" aria-hidden="true"></i> BibTeX</a>{% endif %}
+              </p>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </section>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
 
-
-
+  {% if site.publications.size == 0 %}
+    <p>No publications have been added yet.</p>
+  {% endif %}
+</div>

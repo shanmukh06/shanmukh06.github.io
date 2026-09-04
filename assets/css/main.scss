@@ -164,16 +164,6 @@
     padding: 0;
 }
 
-.publication-card__title a {
-    color: var(--global-text-color);
-    text-decoration: none;
-}
-
-.publication-card__title a:hover {
-    color: var(--global-link-color);
-    text-decoration: underline;
-}
-
 .publication-card__authors,
 .publication-card__venue,
 .publication-card__summary,

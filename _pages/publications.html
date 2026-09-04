@@ -21,13 +21,13 @@ author_profile: true
       {% for post in year.items %}
         <article class="publication-card">
           {% if post.header.teaser %}
-            <a class="publication-card__image" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">
+            <div class="publication-card__image">
               <img src="{{ post.header.teaser | prepend: '/images/' | relative_url }}" alt="">
-            </a>
+            </div>
           {% endif %}
 
           <div class="publication-card__body">
-            <h3 class="publication-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <h3 class="publication-card__title">{{ post.title }}</h3>
 
             {% if post.authors %}
               <p class="publication-card__authors">{{ post.authors }}</p>
